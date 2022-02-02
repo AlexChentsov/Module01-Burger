@@ -15,6 +15,9 @@ body{
     padding-top: 26px;
     padding-bottom: 25px;
 }
+header{
+    border-bottom: 1px solid DEDEDE;
+}
 .header-logo{
     display: block;
     background-image: url(../images/Logo.svg);
@@ -34,6 +37,9 @@ body{
     font-size: 20px;
     text-decoration: none;
 }
+.header-nav a:hover{
+   color: #FFC725; 
+}
 .header-nav a::after{
     content: '';
     width: 100%;
@@ -52,6 +58,7 @@ body{
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-text {
     color: #443737;
@@ -60,7 +67,7 @@ body{
 }
 .button-count{
     color: #FFFFFF;
-    background-color: #F37335;
+    background-color: #f37335;
     font-weight: 700;
     font-size: 13px;
     border-radius: 100%;
@@ -97,10 +104,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover{
+    color: #f37335;
+}
 .breadcrumbs a::before{
     content:'/' ;
     position: relative;
     left: -7px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before{
+    color: #DEDEDE
 }
 .breadcrumbs li:first-child a::before{
     display: none;
@@ -109,7 +123,7 @@ body{
     font-weight: 700;
     font-size: 79px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
 }
 .description{
     font-family: 'Open Sans', sans-serif; 
@@ -118,4 +132,40 @@ body{
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner{
+    margin-top: 140px;
+    margin-bottom: 100px;
+    max-width: 353px;
+    max-height: 238px;
+}
+.banner-box{
+    background-image: url(../images/bunner.jpg);
+    background-size:cover;
+    background-position: center center;
+    width: 1180px;
+    height: 438px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.banner-title{
+    color: #FFFFFF;
+}
+.banner-text{
+    font-family: Open Sans;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FAF9F9;
+    margin-bottom: 15px;
+}
+.banner-link{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1E2F40;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #FBB731;
+    text-decoration: none;
+    padding: 20px 25px;
+    text-transform: uppercase;
 }
